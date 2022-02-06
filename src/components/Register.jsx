@@ -25,7 +25,7 @@ const Register = () =>{
             setError("")
             try {
                   await signup(user.email, user.password)
-                  navigate("/11_socialnetwork/")
+                  navigate("/social-reinstalling/")
             } catch (error) {
                   setError(error.message)
             }
@@ -47,7 +47,7 @@ const Register = () =>{
             </div>
             <button className='bg-blue-500 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Registrarse</button>
       </form>
-            <p className='my-4 text-sm flex justify-between px-3'>Already have an account? <Link to='/11_socialnetwork/login'>Login</Link></p>  
+            <p className='my-4 text-sm flex justify-between px-3'>Already have an account? <Link to='/social-reinstalling/login'>Login</Link></p>  
       </div>
       )
 }

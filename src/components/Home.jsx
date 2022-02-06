@@ -14,7 +14,7 @@ export function Home() {
       const handleLogout = async () => {
             try {
                   await logout()
-                  navigate("/11_socialnetwork/")
+                  navigate("/social-reinstalling/")
             } catch (error) {
                   console.log(error)
             }

@@ -25,7 +25,7 @@ const Login = () =>{
             setError("")
             try {
                   await login(user.email, user.password)
-                  navigate("/11_socialnetwork/")
+                  navigate("/social-reinstalling/")
             } catch (error) {
                   setError(error.message)
             }
@@ -34,7 +34,7 @@ const Login = () =>{
       const HandleLoginGoogle = async() => {
             try {
                   await loginWithGoogle()
-            navigate("/11_socialnetwork/")
+            navigate("/social-reinstalling/")
             } catch (error) {
                   setError(error.message)
             }
@@ -73,7 +73,7 @@ const Login = () =>{
 </div>
       </form> 
 
-      <p className='my-4 text-sm flex justify-between px-3'>Don't have an account? <Link to='/11_socialnetwork/register'>Register</Link></p>
+      <p className='my-4 text-sm flex justify-between px-3'>Don't have an account? <Link to='/social-reinstalling/register'>Register</Link></p>
 
       <button onClick={HandleLoginGoogle} className='bg-red-600 hover:bg-red-500 text-black shadow-md rounded border-2 border-gray-300 py-2 px-4 w-full'>Login with Google</button>
       </div>

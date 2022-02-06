@@ -5,7 +5,7 @@ export function ProtectedRoute({children}){
       const {user, loading} = useAuth()
 
       if (loading) return <h1>Loading...</h1>
-      if (!user) return <Navigate to="/11_socialnetwork/login"/>
+      if (!user) return <Navigate to="/social-reinstalling/login"/>
 
       return <>{children}</>
 }

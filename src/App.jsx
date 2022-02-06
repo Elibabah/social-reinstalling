@@ -11,14 +11,14 @@ function App() {
 <div className="bg-slate-300 h-screen flex">
     <AuthProvider>
         <Routes>
-            <Route path="/11_socialnetwork" element={
+            <Route path="/social-reinstalling" element={
             <ProtectedRoute>
             <Home />
             </ProtectedRoute>
         } />
 
-            <Route path="/11_socialnetwork/login" element={<Login/>} />
-            <Route path="/11_socialnetwork/register" element={<Register/>} />
+            <Route path="/social-reinstalling/login" element={<Login/>} />
+            <Route path="/social-reinstalling/register" element={<Register/>} />
         </Routes>
     </AuthProvider>
     </div>
